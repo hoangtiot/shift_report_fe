@@ -32,9 +32,28 @@ export default function Root() {
           <ul>
             <li>
               <Link to={`/reports`}>Shift Report</Link>
+              <Link to={`/reports/1`}>Single</Link>
+              <Link to={`/reports/new`}>New</Link>
             </li>
             <li>
-              <Link to={`/expenses`}>Expense</Link>
+              <Link to={`/categories`}>Categories</Link>
+              <Link to={`/categories/1`}>Single</Link>
+              <Link to={`/categories/new`}>New</Link>
+            </li>
+            <li>
+              <Link to={`/expenses`}>Expenses</Link>
+              <Link to={`/expenses/1`}>Single</Link>
+              <Link to={`/expenses/new`}>New</Link>
+            </li>
+            <li>
+              <Link to={`/incomes`}>Incomes</Link>
+              <Link to={`/incomes/1`}>Single</Link>
+              <Link to={`/incomes/new`}>New</Link>
+            </li>
+            <li>
+              <Link to={`/debts`}>Debts</Link>
+              <Link to={`/debts/1`}>Single</Link>
+              <Link to={`/debts/new`}>New</Link>
             </li>
           </ul>
         </nav>
