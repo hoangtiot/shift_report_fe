@@ -25,7 +25,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const darkTheme = createTheme({ palette: { mode: "dark" } });
 const lightTheme = createTheme({ palette: { mode: "light" } });
 
-const NewExpense = () => {
+const NewIncome = () => {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12} lg={12}>
@@ -123,4 +123,4 @@ const NewExpense = () => {
   );
 };
 
-export default NewExpense;
+export default NewIncome;

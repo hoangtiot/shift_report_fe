@@ -10,6 +10,11 @@ import ListExpenses from "./pages/list/ListExpenses.tsx";
 import ListReports from "./pages/list/ListReports.tsx";
 import ListIncomes from "./pages/list/ListIncomes.tsx";
 import ListDebts from "./pages/list/ListDebts.tsx";
+import NewCategory from "./pages/new/NewCategory.tsx";
+import NewReport from "./pages/new/NewReport.tsx";
+import NewExpense from "./pages/new/NewExpense.tsx";
+import NewIncome from "./pages/new/NewIncome.tsx";
+import NewDebt from "./pages/new/NewDebt.tsx";
 
 const router = createBrowserRouter([
   {
@@ -22,31 +27,31 @@ const router = createBrowserRouter([
         element: <ListReports />,
       },
       { path: "reports/:reportId", element: <Single /> },
-      { path: "reports/new", element: <New /> },
+      { path: "reports/new", element: <NewReport /> },
       {
         path: "categories",
         element: <ListCategories />,
       },
       { path: "categories/:catId", element: <Single /> },
-      { path: "categories/new", element: <New /> },
+      { path: "categories/new", element: <NewCategory /> },
       {
         path: "expenses",
         element: <ListExpenses />,
       },
       { path: "expenses/:reportId", element: <Single /> },
-      { path: "expenses/new", element: <New /> },
+      { path: "expenses/new", element: <NewExpense /> },
       {
         path: "incomes",
         element: <ListIncomes />,
       },
       { path: "incomes/:incomeId", element: <Single /> },
-      { path: "incomes/new", element: <New /> },
+      { path: "incomes/new", element: <NewIncome /> },
       {
         path: "debts",
         element: <ListDebts />,
       },
       { path: "debts/:debtId", element: <Single /> },
-      { path: "debts/new", element: <New /> },
+      { path: "debts/new", element: <NewDebt /> },
     ],
   },
 ]);

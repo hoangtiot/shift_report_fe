@@ -25,11 +25,11 @@ const Item = styled(Paper)(({ theme }) => ({
 const darkTheme = createTheme({ palette: { mode: "dark" } });
 const lightTheme = createTheme({ palette: { mode: "light" } });
 
-const NewExpense = () => {
+const NewDebt = () => {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12} lg={12}>
-        <BaseCard title="New Expense">
+        <BaseCard title="New Debt">
           <>
             <Stack spacing={3}>
               <TextField
@@ -123,4 +123,4 @@ const NewExpense = () => {
   );
 };
 
-export default NewExpense;
+export default NewDebt;
