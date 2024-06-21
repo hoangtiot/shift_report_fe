@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import BaseCard from "../../(DashboardLayout)/components/shared/BaseCard.tsx";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+import React from "react";
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body1,
   textAlign: "center",
@@ -29,7 +30,7 @@ const NewIncome = () => {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12} lg={12}>
-        <BaseCard title="New Expense">
+        <BaseCard title="New Income">
           <>
             <Stack spacing={3}>
               <TextField

@@ -13,6 +13,7 @@ import {
   Chip,
   TableContainer,
 } from "@mui/material";
+import React from "react";
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -26,18 +27,18 @@ const Item = styled(Paper)(({ theme }) => ({
 const darkTheme = createTheme({ palette: { mode: 'dark' } });
 const lightTheme = createTheme({ palette: { mode: 'light' } });
 
-const products = [
+const data = [
   {
     id: "1",
-    name: "Cash"
+    name: "TT HD BIA"
   },
   {
     id: "2",
-    name: "Card"
+    name: "TT HD tiền nước tháng"
   },
   {
     id: "3",
-    name: "Transfer"
+    name: "TT HD Tré"
   }
 ];
 
@@ -76,18 +77,18 @@ const ListCategories = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {products.map((product) => (
-              <TableRow key={product.name}>
+            {data.map((item) => (
+              <TableRow key={item.name}>
                 <TableCell>
                   <Typography fontSize="15px" fontWeight={500}>
-                    {product.id}
+                    {item.id}
                   </Typography>
                 </TableCell>
                 <TableCell>
                   <Box display="flex" alignItems="center">
                     <Box>
                       <Typography variant="h6" fontWeight={600}>
-                        {product.name}
+                        {item.name}
                         </Typography>
                     </Box>
                   </Box>
