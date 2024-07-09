@@ -12,7 +12,7 @@ import {
   FormControl,
   Button,
 } from "@mui/material";
-import BaseCard from "../../(DashboardLayout)/components/shared/BaseCard.tsx";
+import BaseCard from "../components/card/BaseCard";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import React from "react";
 const Item = styled(Paper)(({ theme }) => ({
@@ -58,7 +58,6 @@ const NewReport = () => {
         </BaseCard>
       </Grid>
 
-      
     </Grid>
   );
 };

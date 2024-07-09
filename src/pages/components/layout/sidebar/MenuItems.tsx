@@ -13,46 +13,46 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: "Buttons",
+    title: "Reports",
     icon: IconCircleDot,
-    href: "/ui-components/buttons",
+    href: "/reports",
   },
   {
     id: uniqueId(),
-    title: "Forms",
+    title: "Debts",
     icon: IconTable,
-    href: "/ui-components/forms",
+    href: "/debts",
   },
   {
     id: uniqueId(),
-    title: "Alerts",
+    title: "Incomes",
     icon: IconInfoCircle,
-    href: "/ui-components/alerts",
+    href: "/incomes",
   },
   {
     id: uniqueId(),
-    title: "Ratings",
+    title: "Expenses",
     icon: IconStar,
-    href: "/ui-components/ratings",
+    href: "/expenses",
   },
-  {
-    id: uniqueId(),
-    title: "Images",
-    icon: IconPhoto,
-    href: "/ui-components/images",
-  },
-  {
-    id: uniqueId(),
-    title: "Pagination",
-    icon: IconUser,
-    href: "/ui-components/pagination",
-  },
-  {
-    id: uniqueId(),
-    title: "Tables",
-    icon: IconLayoutGrid,
-    href: "/ui-components/table",
-  },
+  // {
+  //   id: uniqueId(),
+  //   title: "Images",
+  //   icon: IconPhoto,
+  //   href: "/ui-components/images",
+  // },
+  // {
+  //   id: uniqueId(),
+  //   title: "Pagination",
+  //   icon: IconUser,
+  //   href: "/ui-components/pagination",
+  // },
+  // {
+  //   id: uniqueId(),
+  //   title: "Tables",
+  //   icon: IconLayoutGrid,
+  //   href: "/ui-components/table",
+  // },
 ];
 
 export default Menuitems;

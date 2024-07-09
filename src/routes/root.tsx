@@ -1,8 +1,13 @@
 import { Link, Outlet } from "react-router-dom";
+import React, { useState } from "react";
+import Sidebar from "../pages/components/layout/sidebar/Sidebar";
 
 export default function Root() {
+  const [isSidebarOpen, setSidebarOpen] = useState(true);
   return (
     <>
+    {/* <Sidebar
+        isSidebarOpen={isSidebarOpen}/> */}
       <div id="sidebar">
         <h1>Shift Report</h1>
         <div>
@@ -57,6 +62,7 @@ export default function Root() {
             </li>
           </ul>
         </nav>
+        
       </div>
       <div id="detail"><Outlet/></div>
     </>

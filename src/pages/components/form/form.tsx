@@ -12,7 +12,7 @@ import {
   FormControl,
   Button,
 } from "@mui/material";
-import BaseCard from "../../../(DashboardLayout)/components/shared/BaseCard.tsx";
+import BaseCard from "../card/BaseCard";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body1,

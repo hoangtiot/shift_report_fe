@@ -1,9 +1,6 @@
-import Home from "./pages/home/Home";
-import List from "./pages/list/List";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import New from "./pages/new/New";
 import Single from "./pages/single/Single";
-import Root from "./routes/root";
+import Root from "./routes/root.tsx";
 import ErrorPage from "./error-page";
 import ListCategories from "./pages/list/ListCategories.tsx";
 import ListExpenses from "./pages/list/ListExpenses.tsx";

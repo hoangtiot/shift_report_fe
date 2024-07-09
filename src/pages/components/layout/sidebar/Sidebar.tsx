@@ -1,24 +1,23 @@
 import { useMediaQuery, Box, Drawer } from "@mui/material";
-import Logo from "../shared/logo/Logo";
+// import Logo from "../shared/logo/Logo";
 import SidebarItems from "./SidebarItems";
 import Upgrade from "./Updrade";
+import React from "react";
 
 interface ItemType {
-  isMobileSidebarOpen: boolean;
-  onSidebarClose: (event: React.MouseEvent<HTMLElement>) => void;
+  // onSidebarClose: (event: React.MouseEvent<HTMLElement>) => void;
   isSidebarOpen: boolean;
 }
 
 const Sidebar = ({
-  isMobileSidebarOpen,
-  onSidebarClose,
+  // onSidebarClose,
   isSidebarOpen,
 }: ItemType) => {
-  const lgUp = useMediaQuery((theme: any) => theme.breakpoints.up("lg"));
+  // const lgUp = useMediaQuery((theme: any) => theme.breakpoints.up("lg"));
 
   const sidebarWidth = "270px";
 
-  if (lgUp) {
+  
     return (
       <Box
         sx={{
@@ -55,7 +54,7 @@ const Sidebar = ({
             {/* Logo */}
             {/* ------------------------------------------- */}
             <Box px={2}>
-              <Logo />
+              {/* <Logo /> */}
             </Box>
             <Box>
               {/* ------------------------------------------- */}
@@ -68,34 +67,34 @@ const Sidebar = ({
         </Drawer>
       </Box>
     );
-  }
+  
 
-  return (
-    <Drawer
-      anchor="left"
-      open={isMobileSidebarOpen}
-      onClose={onSidebarClose}
-      variant="temporary"
-      PaperProps={{
-        sx: {
-          width: sidebarWidth,
-          boxShadow: (theme) => theme.shadows[8],
-        },
-      }}
-    >
-      {/* ------------------------------------------- */}
-      {/* Logo */}
-      {/* ------------------------------------------- */}
-      <Box px={2} py={2}>
-        <Logo />
-      </Box>
-      {/* ------------------------------------------- */}
-      {/* Sidebar For Mobile */}
-      {/* ------------------------------------------- */}
-      <SidebarItems />
-      <Upgrade />
-    </Drawer>
-  );
+//   return (
+//     <Drawer
+//       anchor="left"
+//       open={isMobileSidebarOpen}
+//       onClose={onSidebarClose}
+//       variant="temporary"
+//       PaperProps={{
+//         sx: {
+//           width: sidebarWidth,
+//           boxShadow: (theme) => theme.shadows[8],
+//         },
+//       }}
+//     >
+//       {/* ------------------------------------------- */}
+//       {/* Logo */}
+//       {/* ------------------------------------------- */}
+//       <Box px={2} py={2}>
+//         <Logo />
+//       </Box>
+//       {/* ------------------------------------------- */}
+//       {/* Sidebar For Mobile */}
+//       {/* ------------------------------------------- */}
+//       <SidebarItems />
+//       <Upgrade />
+//     </Drawer>
+//   );
 };
 
 export default Sidebar;
