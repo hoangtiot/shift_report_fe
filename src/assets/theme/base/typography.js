@@ -38,9 +38,9 @@ const baseProperties = {
   fontSizeXXS: pxToRem(10.4),
   fontSizeXS: pxToRem(12),
   fontSizeSM: pxToRem(14),
-  fontSizeMD: pxToRem(16),
+  fontSizeMD: pxToRem(18),
   fontSizeLG: pxToRem(18),
-  fontSizeXL: pxToRem(20),
+  fontSizeXL: pxToRem(22),
   fontSize2XL: pxToRem(24),
   fontSize3XL: pxToRem(30),
 };
@@ -68,42 +68,42 @@ const typography = {
   h1: {
     fontFamily: baseProperties.fontFamily2,
     fontSize: pxToRem(48),
-    lineHeight: 1.25,
+    lineHeight: 1.4,
     ...baseHeadingProperties,
   },
 
   h2: {
     fontFamily: baseProperties.fontFamily2,
     fontSize: pxToRem(36),
-    lineHeight: 1.3,
+    lineHeight: 1.4,
     ...baseHeadingProperties,
   },
 
   h3: {
     fontFamily: baseProperties.fontFamily2,
     fontSize: pxToRem(30),
-    lineHeight: 1.375,
+    lineHeight: 1.4,
     ...baseHeadingProperties,
   },
 
   h4: {
     fontFamily: baseProperties.fontFamily,
-    fontSize: pxToRem(24),
-    lineHeight: 1.375,
+    fontSize: pxToRem(26),
+    lineHeight: 1.4,
     ...baseHeadingProperties,
   },
 
   h5: {
     fontFamily: baseProperties.fontFamily,
-    fontSize: pxToRem(20),
-    lineHeight: 1.375,
+    fontSize: pxToRem(22),
+    lineHeight: 1.4,
     ...baseHeadingProperties,
   },
 
   h6: {
     fontFamily: baseProperties.fontFamily,
-    fontSize: pxToRem(16),
-    lineHeight: 1.625,
+    fontSize: pxToRem(18),
+    lineHeight: 1.4,
     ...baseHeadingProperties,
   },
 
@@ -125,14 +125,14 @@ const typography = {
     fontFamily: baseProperties.fontFamily,
     fontSize: baseProperties.fontSizeXL,
     fontWeight: baseProperties.fontWeightRegular,
-    lineHeight: 1.625,
+    lineHeight: 1.7,
   },
 
   body2: {
     fontFamily: baseProperties.fontFamily,
     fontSize: baseProperties.fontSizeMD,
     fontWeight: baseProperties.fontWeightLight,
-    lineHeight: 1.6,
+    lineHeight: 1.65,
   },
 
   button: {

@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+<div align='center'>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>The Shift Report project is a Java Spring Boot application designed to manage financial transactions and debts during business shifts. It uses MySQL for data storage, calculates total shift cash, and provides shift summaries.</p>
 
-## Available Scripts
+<h4> <span> · </span> <a href="#documentation"> Documentation </a> <span> · </span> <a href="#report-bug"> Report Bug </a> <span> · </span> <a href="#request-feature"> Request Feature </a> </h4>
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+# :notebook_with_decorative_cover: Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [About the Project](#star2-about-the-project)
+- [Roadmap](#compass-roadmap)
+- [Contact](#handshake-contact)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## :star2: About the Project
 
-### `npm test`
+### :dart: Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Transaction Management: Record income and expenses during a shift.
+- Debt Management: Track debts incurred during the shift.
+- Cash Calculation: Calculate total cash for each shift, including incomes, expenses, and debts.
+- Shift Summary: Generate shift summaries for record-keeping.
 
-### `npm run build`
+## :compass: Roadmap
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [x] Init and models
+- [x] Record transactions
+- [x] Calculate total
+- [ ] Send notifications
+- [ ] Enhance UI/UX for frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### :gear: Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository:
+\`\`\`bash
+git clone [repository URL will be here]
+\`\`\`
+Navigate to the \`report_be\` directory:
+\`\`\`bash
+cd report_be
+\`\`\`
+Install MySQL locally or use a cloud service. Create a database named \`shift_report_db\`. Update MySQL connection settings in \`src/main/resources/application.properties\`.
+Build the backend application:
+\`\`\`bash
+mvnw install
+\`\`\`
+Run the Spring Boot application:
+\`\`\`bash
+mvnw spring-boot:run
+\`\`\`
 
-### `npm run eject`
+## :handshake: Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+hoangtiot - [LinkedIn](https://www.linkedin.com/in/hoangdh1262/) - dohuyhoang1120@gmail.com
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Project Link: [repository URL will be here]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## UI/UX Improvements for Readability (Roo Code Assist Changes)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In this project, UI/UX improvements were implemented to enhance the readability of the application. The following changes were made:
 
-## Learn More
+- **Increased Base Font Size:** The base font sizes for body text and headings were increased in \`src/assets/theme/base/typography.js\` to improve text legibility.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - \`fontSizeMD\` increased from 16px to 18px.
+  - \`fontSizeXL\` increased from 20px to 22px.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Increased Heading Sizes:** Heading sizes (h4, h5, h6) were slightly increased by 2px each in \`src/assets/theme/base/typography.js\` for better visual hierarchy.
 
-### Code Splitting
+  - h4: increased from 24px to 26px.
+  - h5: increased from 20px to 22px.
+  - h6: increased from 16px to 18px.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Adjusted Line Heights:** Line heights for body text and headings were adjusted in \`src/assets/theme/base/typography.js\` to improve spacing and readability.
 
-### Analyzing the Bundle Size
+  - \`body1\` line height increased from 1.625 to 1.7.
+  - \`body2\` line height increased from 1.6 to 1.65.
+  - Heading line heights (h1-h6) were set to a consistent value of 1.4.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Global Style Adjustments:** Global styles were modified in \`src/assets/theme/base/globals.js\` to enhance text contrast and link readability.
+  - Default body text color was darkened for better contrast.
+  - Default link color was ensured to be dark for better visibility.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+These changes aim to provide a more comfortable and readable user interface for the Shift Report application.

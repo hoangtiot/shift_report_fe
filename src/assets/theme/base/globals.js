@@ -36,4 +36,11 @@ export default {
   "a.link:hover, .link:hover, a.link:focus, .link:focus": {
     color: `${info.main} !important`,
   },
+  body: {
+    lineHeight: 1.7,
+    color: dark.main,
+  },
+  "a.link, .link, a.link:link, .link:link, a.link:visited, .link:visited": {
+    color: `${dark.main} !important`,
+  },
 };

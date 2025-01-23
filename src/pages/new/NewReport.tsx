@@ -15,6 +15,8 @@ import {
 import BaseCard from "../components/card/BaseCard";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import React from "react";
+import Typography from '@mui/material/Typography';
+
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body1,
   textAlign: "center",
@@ -28,37 +30,41 @@ const lightTheme = createTheme({ palette: { mode: "light" } });
 
 const NewReport = () => {
   return (
-    <Grid container spacing={3}>
-      <Grid item xs={12} lg={12}>
-        <BaseCard title="New Report">
-          <>
-            <Stack spacing={3}>
-              <TextField
-                id="cate-basic"
-                label="Income"
-                variant="outlined"
-                defaultValue=""
-              />
-              <TextField 
-                id="content-basic" 
-                label="Debt" 
-                variant="outlined"
-                 />
-              <TextField
-                id="amount-basic"
-                label="Expense"
-                variant="outlined"
-              />
-              
-              
-            </Stack>
-            <br />
-            <Button>Submit</Button>
-          </>
-        </BaseCard>
+    <div>
+      <Typography variant="h4" gutterBottom>
+        Create New Report
+      </Typography>
+      <Grid container spacing={3}>
+        <Grid item xs={12} lg={12}>
+          <BaseCard title="New Report">
+            <>
+              <Stack spacing={3}>
+                <TextField
+                  id="cate-basic"
+                  label="Income"
+                  variant="outlined"
+                  defaultValue=""
+                />
+                <TextField 
+                  id="content-basic" 
+                  label="Debt" 
+                  variant="outlined"
+                   />
+                <TextField
+                  id="amount-basic"
+                  label="Expense"
+                  variant="outlined"
+                />
+                
+                
+              </Stack>
+              <br />
+              <Button>Submit</Button>
+            </>
+          </BaseCard>
+        </Grid>
       </Grid>
-
-    </Grid>
+    </div>
   );
 };
 
